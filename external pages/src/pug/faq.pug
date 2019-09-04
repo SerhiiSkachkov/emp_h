@@ -1,0 +1,285 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='css/bootstrap.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .page-loader
+            .page-laoder-frame
+                img.svg-loader(src="./img/Logo-primary.png")
+        .main-wrapper
+            header.header.header-border
+                .container
+                    .header-wrapper
+                        .header-logo-box
+                            a.logo(href="")
+                                img(src='./img/Logo-primary.png' alt="logo")
+                        .header-box
+                            .header-top
+                                .header-call
+                                    span.icon-phone
+                                        i.fas.fa-phone.fa-flip-horizontal
+                                    .header-call-numbers   
+                                        a(href='') +7 902-293-212
+                                .header-user
+                                    a.header-user-login(href="") Вход
+                                    span /
+                                    a.header-user-register(href="") Регистрация
+                            .hamburger.hamburger--spin.js-hamburger
+                                .hamburger-box
+                                    .hamburger-inner
+                            nav.header-nav
+                                ul.header-nav-list
+                                    li
+                                        a(href="#company") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="index2.html") благотворительность
+                        .header-nav-mobile
+                            .header-user.header-user-mobile
+                                a.header-user-login(href="") Вход
+                                span /
+                                a.header-user-register(href="") Регистрация
+                            nav.nav-mobile
+                                ul.nav-mobile-list
+                                    li
+                                        a(href="#company") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="") благотворительность
+                            ul.social-list.social-list-mobile-nav
+                                li
+                                    a(href="/")
+                                        i.fab.fa-vk
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-facebook
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-twitter
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-instagram
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-youtube
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-telegram-plane
+            main.content
+                section.faq
+                    .container
+                        .row
+                            .col-12.mb-4
+                                h2.title.text-left.mb-5 Вопросы и ответы
+                                ul#pills-tab.nav.nav-pills.flex-column.flex-sm-row.mb-4(role='tablist')
+                                  li.nav-item.mr-sm-1
+                                    a#pills-all.nav-link.active(data-toggle='pill', href='#pills-home', role='tab', aria-controls='pills-home', aria-selected='true') все вопросы
+                                  li.nav-item.mr-sm-1
+                                    a#pills-often.nav-link(data-toggle='pill', href='#pills-profile', role='tab', aria-controls='pills-profile', aria-selected='false') Часто задаваемые
+                                  li.nav-item.mr-sm-1
+                                    a#pills-good.nav-link(data-toggle='pill', href='#pills-contact', role='tab', aria-controls='pills-contact', aria-selected='false') Вопросы по благотворительности
+
+                                #pills-tabContent.tab-content
+                                  #pills-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-all')
+                                    #accordion
+                                      .card
+                                        #headingOne.card-header
+                                            a.card-trigger.text-regular(href=""  data-toggle='collapse', data-target='#collapse1', aria-expanded='true', aria-controls='collapse1') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Зачем нужен интернет-маркетинг?
+                                        #collapse1.collapse.show(aria-labelledby='heading1', data-parent='#accordion')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                                      .card
+                                        #headingTwo.card-header
+                                            a.card-trigger.text-regular.collapsed(href="" data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Что такое интернет-маркетинг?
+                                        #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                                      .card
+                                        #headingThree.card-header
+                                            a.card-trigger.text-regular.collapsed(href="" data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Какие существуют книги по практике развития Сетевого маркетинга?
+                                        #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                                      .card
+                                        #headingFourth.card-header
+                                            a.card-trigger.text-regular.collapsed(href="" data-toggle='collapse', data-target='#collapseFourth', aria-expanded='false', aria-controls='collapseFourth') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Сколько денег мне необходимо, чтобы организовать свой Сетевой бизнес?
+                                        #collapseFourth.collapse(aria-labelledby='headingFourth', data-parent='#accordion')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                                  #pills-profile.tab-pane.fade(role='tabpanel', aria-labelledby='pills-often')
+                                    #accordion2
+                                      .card
+                                        #heading1.card-header
+                                            a.card-trigger.text-regular(href=""  data-toggle='collapse', data-target='#collapse1', aria-expanded='true', aria-controls='collapse1') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Зачем нужен интернет-маркетинг?
+                                        #collapse1.collapse.show(aria-labelledby='heading1', data-parent='#accordion2')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                                      .card
+                                        #headingTwo.card-header
+                                            a.card-trigger.text-regular.collapsed(href="" data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Что такое интернет-маркетинг?
+                                        #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion2')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                                      .card
+                                        #headingThree.card-header
+                                            a.card-trigger.text-regular.collapsed(href="" data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Какие существуют книги по практике развития Сетевого маркетинга?
+                                        #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion2')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                                      .card
+                                        #headingFourth.card-header
+                                            a.card-trigger.text-regular.collapsed(href="" data-toggle='collapse', data-target='#collapseFourth', aria-expanded='false', aria-controls='collapseFourth') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Сколько денег мне необходимо, чтобы организовать свой Сетевой бизнес?
+                                        #collapseFourth.collapse(aria-labelledby='headingFourth', data-parent='#accordion2')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                                  #pills-contact.tab-pane.fade(role='tabpanel', aria-labelledby='pills-good')
+                                    #accordion3
+                                      .card
+                                        #heading1.card-header
+                                            a.card-trigger.text-regular(href=""  data-toggle='collapse', data-target='#collapse1', aria-expanded='true', aria-controls='collapse1') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Зачем нужен интернет-маркетинг?
+                                        #collapse1.collapse.show(aria-labelledby='heading1', data-parent='#accordion3')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                                      .card
+                                        #headingTwo.card-header
+                                            a.card-trigger.text-regular.collapsed(href="" data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Что такое интернет-маркетинг?
+                                        #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion3')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                                      .card
+                                        #headingThree.card-header
+                                            a.card-trigger.text-regular.collapsed(href="" data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Какие существуют книги по практике развития Сетевого маркетинга?
+                                        #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion3')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                                      .card
+                                        #headingFourth.card-header
+                                            a.card-trigger.text-regular.collapsed(href="" data-toggle='collapse', data-target='#collapseFourth', aria-expanded='false', aria-controls='collapseFourth') 
+                                                i.far.fa-chevron-down.mr-3 
+                                                | Сколько денег мне необходимо, чтобы организовать свой Сетевой бизнес?
+                                        #collapseFourth.collapse(aria-labelledby='headingFourth', data-parent='#accordion3')
+                                          .card-body
+                                            p.mb-2  Книг на рынке появляется всё больше и больше. Рекомендовано читать их в определенной последовательности:
+                                            ul
+                                                li.mb-1 1. Джон Каленч "Величайшая история в истории человечества".
+                                                li.mb-1 2. Дон Файла "10 уроков на салфетках ( по мотивам)
+                                                li.mb-1 3. Том Шрайтер (Большой Эл) "Большой Эл раскрывает свои секреты"
+                                                li.mb-1 4. "Турбо MLM." Джон Милтон Фогт "Величайший сетевик в мире".
+                                                li.mb-1 5. "Первый шаг к совершенству" практическое руководство для всех, работающих в СМ.
+                            .col-12.text-center.text-sm-left
+                                a.btn.btn-rounded.btn-warning.pl-5.pr-5(href="") задать свой вопрос
+            include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug

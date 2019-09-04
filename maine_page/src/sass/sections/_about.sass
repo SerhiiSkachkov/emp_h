@@ -1,0 +1,40 @@
+
+.about-item
+    width: 100%
+    height: 100%
+    padding: 50px 10px
+    text-align: center
+    @media(min-width: 992px)
+      padding: 68px 10px 66px
+
+.about [class*=col-]:nth-of-type(2n + 1)
+    .about-item
+        background-color: $light-gray-color
+
+.about-item > p
+    max-width: 260px
+    display: block
+    margin: 0 auto
+    padding: 10px 0px
+    color: #6e6e6e
+
+.about-item
+    .title-small
+        padding: 20px 0px
+        max-width: 265px
+        margin: 0 auto
+
+.about-item-img
+    padding: 10px 0px 10px
+
+@media(min-width: 576px) and (max-width: 991px)
+    .about [class*=col-]:nth-of-type(2n + 1)
+        .about-item
+            background-color: white
+    .about [class*=col-]
+        &:first-child
+            .about-item
+                background-color: $light-gray-color
+        &:last-child
+            .about-item
+                background-color: $light-gray-color

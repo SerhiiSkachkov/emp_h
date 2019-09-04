@@ -1,0 +1,61 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='css/bootstrap.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .page-loader
+            .page-laoder-frame
+                img.svg-loader(src="./img/Logo-primary.png")
+        .main-wrapper(style="background-image: url('../img/register_bg.jpg')")
+            include components/header-cap.pug
+            main.content
+                section.outh
+                    .container
+                        .row
+                            .col.col-md-8.col-xl-6.m-auto
+                                .form-box.panel
+                                    h1.title.text-center.mb-2 РЕГИСТРАЦИЯ
+                                    p.text-center.text-lightgray.mb-4 Поля отмеченные * обязательны к заполнению
+                                    form.form.mb-1
+                                        .row
+                                            .col-12
+                                                .form-group
+                                                    input#emailHelp.form-control(type="text" aria-describedby="emailHelp" placeholder="Логин *")
+                                                    small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+                                            .col-12
+                                                .form-group
+                                                    input.form-control(type="email" aria-describedby="emailHelp" placeholder="E-mail *")
+                                            .col-12
+                                                .form-group
+                                                    input.form-control(type="text" aria-describedby="emailHelp" placeholder="Номер телефона *")
+                                            .col-12
+                                                .form-group
+                                                    input.form-control(type="password" aria-describedby="emailHelp" placeholder="Пароль *")
+                                            .col-12
+                                                .form-group
+                                                    input.form-control(type="password" aria-describedby="emailHelp" placeholder="Повторите пароль *")
+                                            .col-12
+                                                .form-group
+                                                    label.checkbox-group.text-gray Я принимаю условия 
+                                                        a.text-black.text-weight-semibold(href="") соглашения  
+                                                        |  использования сайта
+                                                        input(type="checkbox")
+                                                        span.checkbox-checkmark
+                                            .col-12.mb-3
+                                                button.btn.btn-primary.btn-block.btn-rounded(type="submit") ЗАРЕГИСТРИРОВАТЬСЯ
+                                            .col-12.text-center
+                                                span.text-gray.mr-1 Есть аккаунт?
+                                                a(href="")  Авторизуйтесь
+
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug

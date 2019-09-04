@@ -1,0 +1,35 @@
+.chairity
+    background: url('../img/chairity_bg.jpg') center top no-repeat/cover
+    &-more
+        display: none
+    &-table
+        position: relative
+        overflow: hidden
+        border-radius: 5px
+        &:before
+            content: ''
+            display: block
+            width: 100%
+            height: 100%
+            filter: blur(2px)
+            top: 0px
+            left: 0px
+            right: 0px
+            position: absolute
+            background-color: rgba(0, 0, 0, 0.52)
+    &-el
+        &-img
+            position: relative
+            img
+                width: 100%
+                display: block
+                transition: 0.5s
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 100%
+                border: 0
+                object-fit: cover
+                object-position: 50% 50%

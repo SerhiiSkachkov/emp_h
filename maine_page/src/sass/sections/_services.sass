@@ -1,0 +1,184 @@
+.services
+    padding: 50px 0px
+    color: white
+    background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(../img/special_bg_two.jpg) center top no-repeat/cover
+
+.services-table
+    width: 100%
+    padding: 20px
+
+.title-sub
+    font-weight: 500
+    text-align: center
+
+.services-table-box
+    padding: 10px 0px
+
+.table-box
+    padding: 20px 0px 0px
+    text-align:center
+
+.table-box
+    text-align: center
+    .services-table-sm
+        text-align: left
+        caption
+            width: 100%
+            color: $primary-color
+            font-size: 22px
+            padding: 10px
+            font-family: $secondary-bold-font
+        .services-table-head th
+            padding: 20px 0px 10px 5px
+            border-bottom: 1px solid rgba(211, 211, 211, 0.39)
+            color: $primary-color
+            font-size: 14px
+        .services-table-body tr
+            border-bottom: 1px solid rgba(211, 211, 211, 0.39)
+        .services-table-body tr > td:nth-of-type(1)
+            width: 65%
+        .services-table-body tr > td:nth-of-type(2)
+            width: 30%
+            text-align: center!important
+        .services-table-body tr > td
+            padding: 10px 5px
+            font-size: 13px
+        .services-table-foot > 
+            .services-table-head th:nth-of-type(2) 
+                text-align: center!important
+        .services-table-foot > 
+            .services-table-head th > div:nth-of-type(2)
+                display: block
+                color: $gray-color
+                font-size: 11px
+            .services-table-head
+                    th
+                        span:nth-of-type(2)
+                            font-weight: 500
+                            color: gray
+                            display: block
+        .services-table-foot > tr > td
+            padding: 10px 0px 10px 5px
+            border-bottom: 1px solid rgba(211, 211, 211, 0.39)
+        .services-table-foot > tr > td:nth-of-type(2)
+            text-align: center
+
+.table-ok
+    position: relative
+    width: 20px
+    height: 20px
+    &:before
+        content: ''
+        position: absolute
+        border-bottom: 1.5px solid $primary-color
+        border-right: 1.5px solid $primary-color
+        width: 8px
+        height: 15px
+        transform: rotate(45deg)
+
+.services-table-md
+    @media(max-width: 767px)
+        display: none
+
+
+@media(min-width: 768px)
+    .table-box
+        display: none
+    .services
+        padding: 80px 0px
+    .services-table-md
+        .services-table-body
+            .services-table-head
+                font-family: $secondary-bold-font
+                font-size: 20px
+        .services-table-head
+            text-align: center
+            color: $primary-color
+    .services-table-head th
+        padding: 10px 0px 10px 0px
+    .services-table-head th:nth-of-type(1)
+        width: 250px
+    .services-table tr > td
+        text-align: center
+        padding: 10px 0px
+        border-bottom: 1px solid rgba(211, 211, 211, 0.39)
+    .services-table tr:last-child > td
+        border-bottom: none
+    .services-table tr > td:nth-of-type(1)
+        text-align: left
+        font-size: 12px
+    .services-table-foot 
+        tr:last-child
+            td
+                padding-left: 5px
+                padding-right: 5px
+        .services-table-head
+            border-bottom: 1px solid rgba(211, 211, 211, 0.39)
+
+            th
+                font-size: 14px
+                padding-top: 30px
+                vertical-align: top
+                div
+                    span
+                        font-weight: 500
+                        font-size: 14px
+                div:nth-of-type(1)
+                    margin-bottom: 3px
+                div:nth-of-type(2)
+                    color: lightgray
+                    font-size: 12px
+                    display: block
+            th:nth-of-type(1)
+                text-align: left
+
+@media(min-width: 768px)
+    .services
+        padding: 120px 0px 80px
+
+@media(min-width: 992px)
+    .services-table-box
+        padding: 50px 0px 12px
+    .services-table-head th
+        font-size: 30px
+    .services-table-md
+        .services-table-body
+            .services-table-head
+                font-family: $secondary-bold-font
+                font-size: 20px
+            .services-table-head th:nth-of-type(1)
+                width: 300px
+    .services-table-head th
+        padding: 15px 10px 
+    .services-table tr > td
+        text-align: center
+        padding: 10px
+    .services-table-foot 
+        .services-table-head
+            th
+                font-size: 22px!important
+                div
+                    span
+                        font-size: 16px
+    .services-table-foot
+        th
+            padding-top: 50px
+            div:nth-of-type(2)
+                font-size: 12px
+                font-weight: 400
+        tr
+            td
+                font-size: 14px!important
+    .services-table-body
+        tr
+            td
+                font-size: 14px!important   
+
+@media(min-width: 1200px)
+    .services-table-foot 
+        .services-table-head
+            th
+                font-size: 24px!important
+                div
+                    span
+                        font-size: 16px

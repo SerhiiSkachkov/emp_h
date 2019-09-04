@@ -1,0 +1,102 @@
+.shop
+    &-el
+        &-img
+            position: relative
+            img
+                width: 100%
+                display: block
+                transition: 0.5s
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 100%
+                border: 0
+                object-fit: cover
+                object-position: 50% 50%               
+    &-list
+        padding: 50px 0px
+        &-el
+            width: 100%
+            .title-small
+                color: #212529
+                transition: 0.4s
+            &:hover
+                .title-small
+                    color: #f23d3d
+                .shop-list-img img
+                    transform: scale(1.03)
+        &-img
+            position: relative
+            overflow: hidden
+            img
+                width: 100%
+                display: block
+                transition: 0.5s
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 100%
+                border: 0
+                object-fit: cover
+                object-position: 50% 50%
+    &-order-img
+        position: relative
+        overflow: hidden
+        img
+            width: 100%
+            display: block
+            transition: 0.5s
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 100%
+            border: 0
+            object-fit: cover
+            object-position: 50% 50%
+
+.rating-list i[class^=fas]
+    color: #ffce02
+
+.rating-list i[class^=far]
+    color: #f2f2f2
+
+.comment
+    &-el
+        border-bottom: 1px solid #dadada
+        &-img
+            width: 68px
+            height: 68px
+            margin-right: 1rem
+            img
+                object-fit: cover
+                object-position: 50% 50%
+                width: 68px
+                height: 68px
+        &-box
+            width: calc(100% - (68px + 1rem))
+        &-info-ttl
+            font-weight: 600
+            margin-bottom: 5px
+        &-info-date
+            font-size: 12px
+            margin-bottom: 5px
+            color: #191919
+        &-txt
+            font-size: 12px
+            color: #6e6e6e
+
+@media(min-width: 576px)
+    .comment
+        &-el-info
+            display: flex
+            margin-bottom: 5px
+        &-el-info-ttl
+            font-size: 16px
+        &-el-txt
+            font-size: 14px

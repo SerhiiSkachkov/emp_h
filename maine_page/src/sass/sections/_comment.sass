@@ -1,0 +1,133 @@
+.comment
+    padding: 50px 0px 20px
+    position: relative
+    &:before
+        content: ''
+        display: block
+        width: 100%
+        position: absolute
+        height: 40%
+        background-color: $primary-color
+        right: 20%
+        top: 140px
+
+.comment-slide
+    padding: 50px 0px 0px 0px
+    width: 100%
+    margin-bottom: 0px!important
+
+.comment-item
+    background-color: $dark-color
+    color: white
+    padding: 30px 20px
+    position: relative
+    display: block
+    width: 100%!important
+
+.comment-info > .title-small
+    width: calc(100% - 70px)
+
+.comment-info > .title-small > .comment-city
+    color: $white-color
+    display: block
+
+.comment-img img
+    width: 70px
+    height: 70px
+    border-radius: 50%
+    overflow: hidden
+
+.comment-img 
+    position: absolute
+    right: 10px
+    top: 10px
+
+.comment-item-box
+    width: 100%
+
+.comment-item-box > .comment-item
+    margin-bottom: 10px
+
+.comment .slick-arrow
+    top: 10px
+    width: 15px
+    height: 15px
+
+.comment .slick-arrow
+    &:before,
+    &:after
+        content: ''
+
+.comment .slick-prev
+    right: 10px
+    left: auto
+    transform: rotate(-45deg)
+
+.comment .slick-prev:before
+    border-right: 3px solid $dark-color
+    width: 15px
+    border-bottom: 3px solid $dark-color
+    height: 15px
+    display: block
+    
+.comment .slick-next:before
+    border-right: 3px solid $dark-color
+    width: 15px
+    border-bottom: 3px solid $dark-color
+    height: 15px
+    display: block
+
+.comment .slick-next
+    right: 70px
+    left: auto
+    transform: rotate(135deg)
+
+@media(min-width: 768px)
+    .comment-img
+        top: 15px
+        right: 15px
+    .comment-item-box
+        padding: 0px 10px
+
+@media(min-width: 992px)
+    .comment-img
+        top: 15px
+        right: 20px
+    .comment
+        padding-top: 100px
+        &:before
+            top: 230px
+            right: 35%
+        .title-mid
+            margin-bottom: 40px
+        .container-modify
+            padding: 0px 15px
+    .comment-slide
+        padding: 60px 0px 30px
+    .comment-item-box
+        padding: 0px 15px
+    .comment-item
+        padding: 30px 40px
+    .comment-item-box > .comment-item:nth-of-type(1)
+        margin-bottom: 25px
+    .comment .slick-prev
+        right: 60px
+    .comment .slick-next 
+        right: 100px
+
+@media(min-width: 1200px)
+    .comment-info .title-small > .comment-city
+        display: inline-block
+        margin: 0px 5px
+        font-size: 14px
+    .comment-item-box
+        padding: 0px 53px
+    .comment
+        .container
+            max-width: 1440px
+    .comment-item
+        padding: 50px 30px 30px 60px
+    .comment-img 
+        left: -35px
+        top: 45px
+        right: auto

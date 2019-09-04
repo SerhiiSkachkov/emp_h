@@ -1,0 +1,227 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='css/bootstrap.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .page-loader
+            .page-laoder-frame
+                img.svg-loader(src="./img/Logo-primary.png")
+        .main-wrapper
+            header.header.header-border.header-costom
+                .container
+                    .header-wrapper
+                        .header-logo-box
+                            a.logo(href="")
+                                img(src='./img/Logo-primary.png' alt="logo")
+                        .header-box
+                            .header-top
+                                .header-call
+                                    span.icon-phone
+                                        i.fas.fa-phone.fa-flip-horizontal
+                                    .header-call-numbers   
+                                        a(href='') +7 902-293-212
+                                .header-user
+                                    a.header-user-login(href="") Вход
+                                    span /
+                                    a.header-user-register(href="") Регистрация
+                            .hamburger.hamburger--spin.js-hamburger
+                                .hamburger-box
+                                    .hamburger-inner
+                            nav.header-nav
+                                ul.header-nav-list
+                                    li
+                                        a(href="shop_or.html") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="index2.html") благотворительность
+                        .header-nav-mobile
+                            .header-user.header-user-mobile
+                                a.header-user-login(href="") Вход
+                                span /
+                                a.header-user-register(href="") Регистрация
+                            nav.nav-mobile
+                                ul.nav-mobile-list
+                                    li
+                                        a(href="#company") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="") благотворительность
+                            ul.social-list.social-list-mobile-nav
+                                li
+                                    a(href="/")
+                                        i.fab.fa-vk
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-facebook
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-twitter
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-instagram
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-youtube
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-telegram-plane
+                                
+            main.content
+                section.chairity.content-costom-header
+                    .chairity-wrapper.pt-5.pb-5
+                        .container
+                            .chairity-table.pt-4.pb-4
+                                .row
+                                    .col-11.m-auto
+                                        .table-responsive-lg.mb-4
+                                            h2.title.text-white.mb-4 благотворительность
+                                            table.table.table-costom
+                                                thead
+                                                    tr
+                                                        th(scope='col') №
+                                                        th(scope='col') логин
+                                                        th(scope='col') фио
+                                                        th(scope='col') город
+                                                        th(scope='col') время оплаты пакета
+                                                        th(scope='col') средства в фонд помощи, руб
+                                                tbody
+                                                    tr
+                                                        th(scope='row') 1
+                                                        td stepik
+                                                        td 
+                                                            div Антонюк 
+                                                            div Степан Сергеевич
+                                                        td Челябинск
+                                                        td 
+                                                            div 10.01.2019 
+                                                            div 08:45
+                                                        td 1 000
+                                                    tr
+                                                        th(scope='row') 2
+                                                        td stepik
+                                                        td 
+                                                            div Антонюк 
+                                                            div Степан Сергеевич
+                                                        td Челябинск
+                                                        td 
+                                                            div 10.01.2019 
+                                                            div 08:45
+                                                        td 1 000
+                                                    tr
+                                                        th(scope='row') 3
+                                                        td tatiana_12444
+                                                        td 
+                                                            div Антонюк 
+                                                            div Степан Сергеевич
+                                                        td Челябинск
+                                                        td 
+                                                            div 10.01.2019 
+                                                            div 08:45
+                                                        td 1 000
+                                                    tr
+                                                        th(scope='row') 4
+                                                        td stepik
+                                                        td 
+                                                            div Антонюк 
+                                                            div Степан Сергеевич
+                                                        td Челябинск
+                                                        td 
+                                                            div 10.01.2019 
+                                                            div 08:45
+                                                        td 1 000
+                                                    tr
+                                                        th(scope='row') 5
+                                                        td stepik
+                                                        td 
+                                                            div Антонюк 
+                                                            div Степан Сергеевич
+                                                        td Челябинск
+                                                        td 
+                                                            div 10.01.2019 
+                                                            div 08:45
+                                                        td 1 000
+                                        .table-pagination
+                                            nav(aria-label='Page navigation')
+                                              ul.pagination.pagination-costom
+                                                li.page-item.page-item-prev
+                                                  a(href='#')
+                                                li.page-item.active
+                                                  a(href='#') 1
+                                                li.page-item
+                                                  a(href='#') 2
+                                                li.page-item
+                                                  a(href='#') 3
+                                                li.page-item
+                                                  a(href='#') 4
+                                                li.page-item
+                                                  a(href='#') 5
+                                                li.page-item.page-item-next
+                                                  a(href='#')
+                section.chairiti-content.pt-5.pb-5
+                    .container
+                        h2.title.title-mid.mb-5 нужна помощь
+                        .row
+                            .col-md-6.col-lg-4.mb-4
+                                .chairity-el
+                                    .chairity-el-img.embed-responsive-10by10.mb-4
+                                        img(src='./img/chairity_el.jpg' alt="img")
+                                    .title.title-small.mb-3 Петренко петр иванович
+                                    .chairity-txt.mb-3
+                                        p.text-gray Редкая болезнь крови. Требуется лечение в Швецарии. Родные и близкие всеми силами ищут помощи.
+                                        .chairity-more
+                                            p.text-gray И все-таки прямо сейчас главная цель Абдурахима — победить болезнь. В октябре 2017 года его начали беспокоить приступы рвоты и головная боль. С каждым днем мальчику становилось все хуже: в начале ноября к врачу его несли уже на руках.
+
+                                            p.text-gray Обследование МРТ выявило новообразование в головном мозге, которое удалили лишь частично. Спустя три месяца после хирургического вмешательства остаточная опухоль снова начала расти, поэтому сейчас Абдурахиму нужно снова сделать операцию по удалению опухоли, а после — провести лучевую терапию. Оплатить это дорогостоящее лечение родители мальчика смогут только с вашей помощью.
+                                    a.btn.btn-outline-dark.btn-rounded.pl-5.pr-5.js-toogle-more(href="") подробнее                                     
+                            .col-md-6.col-lg-4.mb-4
+                                .chairity-el
+                                    .chairity-el-img.embed-responsive-10by10.mb-4
+                                        img(src='./img/chairity_el.jpg' alt="img")
+                                    .title.title-small.mb-3 Петренко петр иванович
+                                    .chairity-txt.mb-3
+                                        p.text-gray Редкая болезнь крови. Требуется лечение в Швецарии. Родные и близкие всеми силами ищут помощи.
+                                        .chairity-more
+                                            p.text-gray И все-таки прямо сейчас главная цель Абдурахима — победить болезнь. В октябре 2017 года его начали беспокоить приступы рвоты и головная боль. С каждым днем мальчику становилось все хуже: в начале ноября к врачу его несли уже на руках.
+
+                                            p.text-gray Обследование МРТ выявило новообразование в головном мозге, которое удалили лишь частично. Спустя три месяца после хирургического вмешательства остаточная опухоль снова начала расти, поэтому сейчас Абдурахиму нужно снова сделать операцию по удалению опухоли, а после — провести лучевую терапию. Оплатить это дорогостоящее лечение родители мальчика смогут только с вашей помощью.
+                                    a.btn.btn-outline-dark.btn-rounded.pl-5.pr-5.js-toogle-more(href="") подробнее     
+                            .col-md-6.col-lg-4.mb-4
+                                .chairity-el
+                                    .chairity-el-img.embed-responsive-10by10.mb-4
+                                        img(src='./img/chairity_el.jpg' alt="img")
+                                    .title.title-small.mb-3 Петренко петр иванович
+                                    .chairity-txt.mb-3
+                                        p.text-gray Редкая болезнь крови. Требуется лечение в Швецарии. Родные и близкие всеми силами ищут помощи.
+                                        .chairity-more
+                                            p.text-gray И все-таки прямо сейчас главная цель Абдурахима — победить болезнь. В октябре 2017 года его начали беспокоить приступы рвоты и головная боль. С каждым днем мальчику становилось все хуже: в начале ноября к врачу его несли уже на руках.
+
+                                            p.text-gray Обследование МРТ выявило новообразование в головном мозге, которое удалили лишь частично. Спустя три месяца после хирургического вмешательства остаточная опухоль снова начала расти, поэтому сейчас Абдурахиму нужно снова сделать операцию по удалению опухоли, а после — провести лучевую терапию. Оплатить это дорогостоящее лечение родители мальчика смогут только с вашей помощью.
+                                    a.btn.btn-outline-dark.btn-rounded.pl-5.pr-5.js-toogle-more(href="") подробнее     
+
+            include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug

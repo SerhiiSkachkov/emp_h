@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='css/bootstrap.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .page-loader
+            .page-laoder-frame
+                img.svg-loader(src="./img/Logo-primary.png")
+        .main-wrapper(style="background-image: url('./img/authorizate_bg.jpg')")
+            include components/header-cap.pug
+            main.content
+                section.outh
+                    .container
+                        .row
+                            .col.col-md-8.col-xl-6.m-auto
+                                .form-box.panel
+                                    h1.title.text-center.mb-2 ВОСCТАНОВЛЕНИЕ ПАРОЛЯ
+                                    p.text-center.text-lightgray.mb-4 Введите Е-mail, указанный Вами при регистрации. На него будет выслано письмо с информацией для восстановления
+                                    form.form.mb-1
+                                        .row
+                                            .col-12
+                                                .form-group
+                                                    input#emailHelp.form-control(type="email" aria-describedby="emailHelp" placeholder="E-mail *")
+                                                    small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+                                            .col-12.mb-3
+                                                button.btn.btn-primary.btn-block.btn-rounded(type="submit") ВОСCТАНОВИТЬ ПАРОЛЬ
+
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug

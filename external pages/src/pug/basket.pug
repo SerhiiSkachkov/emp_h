@@ -1,0 +1,235 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='css/bootstrap.min.css')
+        link(rel='stylesheet' href='css/jquery.scrollbar.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .page-loader
+            .page-laoder-frame
+                img.svg-loader(src="./img/Logo-primary.png")
+        .main-wrapper
+            header.header.header-border
+                .container
+                    .header-wrapper
+                        .header-logo-box
+                            a.logo(href="")
+                                img(src='./img/Logo-primary.png' alt="logo")
+                        .header-box
+                            .header-top
+                                .header-call
+                                    span.icon-phone
+                                        i.fas.fa-phone.fa-flip-horizontal
+                                    .header-call-numbers   
+                                        a(href='') +7 902-293-212
+                                .header-user
+                                    a.header-user-login(href="") Вход
+                                    span /
+                                    a.header-user-register(href="") Регистрация
+                            .hamburger.hamburger--spin.js-hamburger
+                                .hamburger-box
+                                    .hamburger-inner
+                            nav.header-nav
+                                ul.header-nav-list
+                                    li
+                                        a(href="shop_or.html") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="index2.html") благотворительность
+                        .header-nav-mobile
+                            .header-user.header-user-mobile
+                                a.header-user-login(href="") Вход
+                                span /
+                                a.header-user-register(href="") Регистрация
+                            nav.nav-mobile
+                                ul.nav-mobile-list
+                                    li
+                                        a(href="#company") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="") благотворительность
+                            ul.social-list.social-list-mobile-nav
+                                li
+                                    a(href="/")
+                                        i.fab.fa-vk
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-facebook
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-twitter
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-instagram
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-youtube
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-telegram-plane
+            main.content
+                section.basket.pt-5.pb-5
+                    .container
+                        .row
+                            .col-12.mb-5
+                                h2.title Оформление заказа
+                            .col-12.mb-5
+                                .basket-table
+                                    .table-responsive-lg.mb-4
+                                        table.table.text-weight-bold
+                                            thead
+                                                tr
+                                                    th.text-weight-bold(scope='col') Название
+                                                    th.text-weight-bold(scope='col') цена
+                                                    th.text-weight-bold(scope='col') количество
+                                                    th.text-weight-bold(scope='col') итоговая сумма
+                                                    th.text-weight-bold(scope='col') 
+                                            tbody
+                                                tr
+                                                    th.text-weight-bold(scope='row')
+                                                        a.bascket-order.text-black(href="")
+                                                            span.table-basket-img.mr-3
+                                                                img(src='./img/basket.jpg' alt="basket-img")
+                                                            span.table-basket-name Название товара #1
+                                                    td.text-weight-bold 12 500 руб
+                                                    td 
+                                                        span.count
+                                                            button.btn-count.btn-count--minus.js-qty__adjust.js-qty__adjust--minus -
+                                                            input.count-cotrols.js-qty__num(type="number" value="1")
+                                                            button.btn-count.btn-count--plus.js-qty__adjust.js-qty__adjust--plus +
+                                                    td.text-weight-bold 25 000 руб
+                                                    td
+                                                        a(href="")
+                                                            i.fas.fa-times
+                                                tr
+                                                    th.text-weight-bold(scope='row')
+                                                        a.bascket-order.text-black(href="")
+                                                            span.table-basket-img.mr-3
+                                                                img(src='./img/basket.jpg' alt="basket-img")
+                                                            span.table-basket-name Название товара #2
+                                                    td.text-weight-bold 12 500 руб
+                                                    td 
+                                                        span.count
+                                                            button.btn-count.btn-count--minus.js-qty__adjust.js-qty__adjust--minus -
+                                                            input.count-cotrols.js-qty__num(type="number" value="10")
+                                                            button.btn-count.btn-count--plus.js-qty__adjust.js-qty__adjust--plus +
+                                                    td.text-weight-bold 25 000 руб
+                                                    td
+                                                        a(href="")
+                                                            i.fas.fa-times
+                                                tr
+                                                    th.text-weight-bold(scope='row')
+                                                        a.bascket-order.text-black(href="")
+                                                            span.table-basket-img.mr-3
+                                                                img(src='./img/basket.jpg' alt="basket-img")
+                                                            span.table-basket-name Название товара #3
+                                                    td.text-weight-bold 12 500 руб
+                                                    td 
+                                                        span.count
+                                                            button.btn-count.btn-count--minus.js-qty__adjust.js-qty__adjust--minus -
+                                                            input.count-cotrols.js-qty__num(type="number" value="100")
+                                                            button.btn-count.btn-count--plus.js-qty__adjust.js-qty__adjust--plus +
+                                                    td.text-weight-bold 25 000 руб
+                                                    td
+                                                        a(href="")
+                                                            i.fas.fa-times
+
+                            .col-12.mb-5
+                                .basket-info
+                                    .row
+                                        .col-12.mb-5
+                                            h3.title ДЕТАЛИ ЗАКАЗА
+                                        .col-md-6.col-lg-4
+                                            .form-group
+                                                input.form-control(type="text" placeholder="Логин")
+                                        .col-md-6.col-lg-4
+                                            .form-group
+                                                input.form-control(type="email" placeholder="E-mail")
+                                    .row.mb-5
+                                        .col-md-6.col-lg-4
+                                            .form-group
+                                                input.form-control(type="text" placeholder="Фамилия")
+                                        .col-md-6.col-lg-4
+                                            .form-group
+                                                input.form-control(type="text" placeholder="Имя")
+                                        .col-md-6.col-lg-4
+                                            .form-group
+                                                input.form-control(type="text" placeholder="Отчество")
+                                    .row
+                                        .col-12.mb-5
+                                            h3.title СПОСОБЫ ОПЛАТЫ И ДОСТАВКИ
+                                        .col-md-6.mb-5
+                                            .form-group
+                                                label.radio-group.text-gray Оплатить с помощью платежной системы "PerfectMoney"  
+                                                    input.hidden(type="radio" name="pay")
+                                                    span.radio-checkmark
+                                            .form-group
+                                                label.radio-group.text-gray Оплатить с помощью платежной системы "Интеркасса"  
+                                                    input.hidden(type="radio" name="pay")
+                                                    span.radio-checkmark
+                                            .form-group
+                                                label.radio-group.text-gray Оплатить с помощью платежной системы "PayPal"  
+                                                    input.hidden(type="radio" name="pay")
+                                                    span.radio-checkmark
+                                            .form-group
+                                                label.radio-group.text-gray Оплатить с помощью платежной системы "Payeer"
+                                                    input.hidden(type="radio" name="pay")
+                                                    span.radio-checkmark
+                                        .col-md-6.mb-5
+                                            .form-group
+                                                label.radio-group.text-gray Курьерская служба (500 руб)  
+                                                    input.hidden(type="radio" name="Delivery")
+                                                    span.radio-checkmark
+                                            .form-group
+                                                label.radio-group.text-gray Почта России (150 руб)
+                                                    input.hidden(type="radio" name="Delivery")
+                                                    span.radio-checkmark
+                                            .form-group
+                                                label.radio-group.text-gray Самовывод (бесплатно) 
+                                                    input.hidden(type="radio" name="Delivery")
+                                                    span.radio-checkmark
+                                    .row
+                                        .col-12.mb-5
+                                            h3.title ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+                                        .col-12.mb-5
+                                            .form-group
+                                                textarea.textarea-scrollbar.scrollbar-outer.js-scroll-bar(type="text")
+                                        .col-12.text-center
+                                            .row.justify-content-lg-between.align-items-lg-center
+                                                .col-12.col-lg-auto.order-lg-2
+                                                    div.title 
+                                                        span.mr-1 Итого:      
+                                                        span.title.h4.mr-1 85 000
+                                                            span.h6 руб     
+                                                .col-12.col-lg-auto.order-lg-1
+                                                    a.btn.btn-outline-dark.btn-rounded.mr-2.mb-2(href="")
+                                                                i.fas.fa-long-arrow-alt-left.mr-2
+                                                                | ПродОлжить покупки
+                                                    a.btn.btn-primary.btn-rounded.mr-2.mb-2.px-5(href="")
+                                                                | оплатить покупки
+            include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug

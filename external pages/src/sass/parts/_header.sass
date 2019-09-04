@@ -1,0 +1,225 @@
+.header
+    width: 100%
+    z-index: 100
+    background-color: white
+    position: relative
+
+.header-costom
+    position: absolute
+    left: 0px
+    right: 0px
+    top: 0px
+    background-color: transparent
+    
+.header-border
+    &:before
+        content: ''
+        display: block
+        width: 100%
+        bottom: -1px
+        position: absolute
+        border-bottom: 1px solid rgba(242, 242, 242, 0.54)
+        
+.header-cap
+    width: 100%
+    text-align: center
+    z-index: 10
+    order: 1
+
+.logo-cap
+    background-color: $primary-color
+    padding: 25px 25px
+
+.header-wrapper
+    display: flex
+    justify-content: space-between
+    position: relative
+
+.header-logo-box
+    width: 100px
+
+.logo
+    text-align: center
+    background-color: black
+    padding: 10px
+    height: 100%
+
+.header-top
+    padding: 10px 0px
+    text-align: right
+
+.header-box
+    width: 100%
+
+.header-call
+    display: flex
+    justify-content: center
+
+.header-call-numbers
+    display: flex
+    flex-direction: column
+
+.header-call .icon-phone
+    padding: 5px
+    width: 30px
+
+.header-call .icon-phone:before
+    font-size: 13px
+
+.header-call a
+    padding: 5px
+    color: black
+    &:hover
+        color: $primary-color
+
+.header-call,
+.header-user
+    padding: 5px 5px 
+    text-align: center
+
+.header-user a
+    color: black
+    padding: 5px 5px
+    font-weight: bold
+    font-size: 12px
+
+.header-nav-mobile > .header-user a
+    font-size: 18px
+
+.header-nav-mobile > .header-user   
+    padding: 15px 50px
+
+.header-user,
+.header-call
+    width: calc(100% - 40px)
+
+.header-user .header-user-register
+    color: $secondary-color
+
+.header-user
+    span
+        color: white
+    .header-user-login,
+    .header-user-register
+        &:hover
+            color: $primary-color
+
+.header-nav-mobile
+    transition: 1s
+    padding: 10px 0px
+    width: 100%
+    height: 100%
+    position: fixed
+    background-color: white
+    left: 0px
+    right: 0px
+    top: -300%
+    bottom: 0px
+    z-index: 99
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.nav-mobile
+    display: flex
+
+.header-nav-mobile--open
+    top: 0px
+
+.header-nav-mobile .header-user
+    width: 100%
+
+.nav-mobile-list
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: start
+    height: 100%
+    overflow-y: auto
+
+.nav-mobile-list li
+    text-align: center
+
+.nav-mobile-list a
+    font-family: $secondary-bold-font
+    text-transform: uppercase
+    text-align: center
+    font-size: 18px
+    padding: 10px 10px
+    color: $dark-color
+    &:hover
+        background-color: $primary-color
+@media(max-width: 991px)
+    .header-nav
+        display: none
+
+@media(min-width: 768px)
+    .header-top
+        display: flex
+        width: calc(100% - 55px)
+        justify-content: space-between
+        align-items: center
+        padding-top: 20px
+    .header-top .header-call, .header-user
+        width: auto
+        padding: 5px 5px
+    .header-call
+        align-items: center
+    .header-call-numbers
+        flex-flow: wrap
+    .header-user a
+        font-size: 14px
+
+@media(min-width: 992px)
+    .logo
+        width: 100px
+        padding: 32px 15px 10px
+    .header-top
+        display: flex
+        justify-content: flex-end
+        width: 100%
+
+    .header-nav-list
+        display: flex
+        justify-content: flex-end
+    .header-nav-list li
+        margin-right: 5px
+        &:last-child
+          margin-right: 0px
+
+    .header-nav-list a:before
+        content: ''
+        position: absolute
+        width: 0%
+        height: 100%
+        top: 0px
+        bottom: 0px
+        z-index: -1
+        left: 50%
+        background-color: $primary-color
+        transition: 0.3s
+    .header-nav-list a
+        position: relative
+        font-family: $secondary-bold-font
+        text-transform: uppercase
+        font-size: 18px
+        line-height: 1
+        padding: 8px 10px 7px
+        color: $dark-color
+        letter-spacing: 1px
+        &:hover
+            &:before
+                width: 100%
+                left: 0px
+    .header-costom
+        .header-nav-list a
+            color: white!important
+            &:hover
+                color: black!important
+        .header-user-register
+            color: #ffce02
+            &:hover
+                color: #f23d3d
+@media(min-width: 1200px)
+    .header-nav-list li
+        margin-right: 15px

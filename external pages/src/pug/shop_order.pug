@@ -1,0 +1,212 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='css/bootstrap.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .page-loader
+            .page-laoder-frame
+                img.svg-loader(src="./img/Logo-primary.png")
+        .main-wrapper
+            header.header.header-border
+                .container
+                    .header-wrapper
+                        .header-logo-box
+                            a.logo(href="")
+                                img(src='./img/Logo-primary.png' alt="logo")
+                        .header-box
+                            .header-top
+                                .header-call
+                                    span.icon-phone
+                                        i.fas.fa-phone.fa-flip-horizontal
+                                    .header-call-numbers   
+                                        a(href='') +7 902-293-212
+                                .header-user
+                                    a.header-user-login(href="") Вход
+                                    span /
+                                    a.header-user-register(href="") Регистрация
+                            .hamburger.hamburger--spin.js-hamburger
+                                .hamburger-box
+                                    .hamburger-inner
+                            nav.header-nav
+                                ul.header-nav-list
+                                    li
+                                        a(href="shop_or.html") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="index2.html") благотворительность
+                        .header-nav-mobile
+                            .header-user.header-user-mobile
+                                a.header-user-login(href="") Вход
+                                span /
+                                a.header-user-register(href="") Регистрация
+                            nav.nav-mobile
+                                ul.nav-mobile-list
+                                    li
+                                        a(href="#company") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="") благотворительность
+                            ul.social-list.social-list-mobile-nav
+                                li
+                                    a(href="/")
+                                        i.fab.fa-vk
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-facebook
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-twitter
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-instagram
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-youtube
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-telegram-plane
+            main.content
+                section.shop-order.pt-5.pb-5
+                    .container
+                        h2.title.mb-5 Категория товаров #1
+                        .row
+                            .col-lg-9.order-2.order-lg-1
+                                .row
+                                    .col-12.col-md-5
+                                        .shop-order-img.mb-3.embed-responsive-10by6
+                                            img(src="img/order.jpg", alt="order")
+
+                                    .col-12.col-md-7
+                                        .row
+                                            .col-12.mb-3
+                                                h3.title Категория товаров #1
+                                            .col-12.mb-4
+                                                .shop-rating
+                                                    ul.rating-list.d-flex
+                                                        li
+                                                            i.fas.fa-star
+                                                        li
+                                                            i.fas.fa-star
+                                                        li
+                                                            i.fas.fa-star-half-alt
+                                                        li
+                                                            i.far.fa-star
+                                                        li
+                                                            i.far.fa-star
+                                            .col-12.col-md-10.col-lg-8.col-xl-8.mb-2
+                                                .row.justify-content-between.align-items-start
+                                                    .col-auto
+                                                        span.text-gray Цена
+                                                        .h2.title.mb-0 5 800 
+                                                             span.h6.mb-0 руб
+                                                    .col-auto.mt-1
+                                                        a.btn.btn-primary.btn-rounded(href="") Купить
+                                    .col-12
+                                        ul#pills-tab.nav.nav-pills.flex-column.flex-sm-row.mb-4(role='tablist')
+                                          li.nav-item.mr-sm-1
+                                            a#pills-descr-tab.nav-link.active(data-toggle='pill', href='#pills-descr', role='tab', aria-controls='pills-descr', aria-selected='true') Описание товара
+                                          li.nav-item.mr-sm-1
+                                            a#pills-comment-tab.nav-link(data-toggle='pill', href='#pills-comments', role='tab', aria-controls='pills-profile', aria-selected='false') Отзывы
+
+                                        #pills-tabContent.tab-content
+                                          #pills-descr.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-descr-tab')
+                                            .shop-order-description
+                                                p.mb-3 Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+
+                                                p.mb-3 Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+
+                                          #pills-comments.tab-pane.fade(role='tabpanel', aria-labelledby='pills-comment-tab')
+                                            .shop-comment
+                                                ul.commen-list
+                                                    li.comment-el.d-flex.pb-3
+                                                        .comment-el-img
+                                                            img(src="img/shop-comment-user.jpg", alt="user-img")
+                                                        .comment-el-box
+                                                            .comment-el-info.justify-content-sm-between
+                                                                .comment-el-info-ttl.mr-sm-1 Андрей Никифоров
+                                                                .comment-el-info-date.ml-sm-1 21.01.2019
+                                                            .comment-el-txt.mb-3
+                                                                p Eos id timeam meliore, assentior deseruisse necessitatibus vis id. Et consectetuer reprehendunt his, virtute praesent te nam. An mea volumus maluisset theophrastus consectetuer.
+                                                            .commen-el-report
+                                                                i.fas.fa-comments-alt.mr-2.text-secondary
+                                                                a.text-black.text-weight-regular(href="") Ответить
+                                                    li.comment-el.d-flex.pb-3.ml-3.ml-md-4.pt-3
+                                                        .comment-el-img
+                                                            img(src="img/shop-comment-user2.jpg", alt="user-img")
+                                                        .comment-el-box
+                                                            .comment-el-info.justify-content-sm-between
+                                                                .comment-el-info-ttl.mr-sm-1 Alyssa Milano
+                                                                .comment-el-info-date.ml-sm-1 21.01.2019
+                                                            .comment-el-txt.mb-3
+                                                                p Eos id timeam meliore, assentior deseruisse necessitatibus vis id. Et consectetuer reprehendunt his, virtute praesent te nam. An mea volumus maluisset theophrastus consectetuer.
+                                                            .commen-el-report
+                                                                i.fas.fa-comments-alt.mr-2.text-secondary
+                                                                a.text-black.text-weight-regular(href="") Ответить
+                                                    li.comment-el.d-flex.pb-3.pt-3
+                                                        .comment-el-img
+                                                            img(src="img/shop-comment-none.jpg", alt="user-img")
+                                                        .comment-el-box
+                                                            .comment-el-info.justify-content-sm-between
+                                                                .comment-el-info-ttl.mr-sm-1 Cthutq 12123
+                                                                .comment-el-info-date.ml-sm-1 21.01.2019
+                                                            .comment-el-txt.mb-3
+                                                                p Eos id timeam meliore, assentior deseruisse necessitatibus vis id. Et consectetuer reprehendunt his, virtute praesent te nam. An mea volumus maluisset theophrastus consectetuer.
+                                                            .commen-el-report
+                                                                i.fas.fa-comments-alt.mr-2.text-secondary
+                                                                a.text-black.text-weight-regular(href="") Ответить
+                                                .row.py-5
+                                                    .col-12.mb-5
+                                                        h3.title Оставить отзыв
+                                                    .col-12
+                                                        .form-group
+                                                            textarea.form-control(type="text")
+                                                    .col-12
+                                                        a.btn.btn-gray.btn-rounded(href="") Добавить отзыв                                                           
+                            .col-lg-3.order-1.order-lg-2
+                                .row
+                                    .col-12.pl-xl-5.mb-5
+                                        h4.title.mb-3 Поиск
+                                        form.d-flex.search-form
+                                            input.form-control.form-control-search(type="text" placeholder="Search" aria-label="Search")
+                                            button.btn.btn-search(type="submit")
+                                                i.text-secondary.far.fa-search
+                                    .col-12.pl-xl-5.mb-3
+                                        h4.title.mb-3 Категории
+                                        ul
+                                            li.mb-3
+                                                a(href="") Категория товара #1
+                                            li.mb-3
+                                                a(href="") Категория товара #2
+                                            li.mb-3
+                                                a(href="") Категория товара #3
+                                            li.mb-3
+                                                a(href="") Категория товара #4
+                                            li.mb-3
+                                                a(href="") Категория товара #5
+            include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug

@@ -1,0 +1,48 @@
+.plans
+    padding: 50px 0px
+    background: url(../img/plans_bg.jpg) center top no-repeat/cover
+
+.plans .caption
+    margin-bottom: 30px
+
+.plans .title-sub
+    text-align: center
+    font-weight: 500
+    font-size: 16px
+
+.plans-item .title-small
+    margin-bottom: 15px
+
+.plans [class*=col-]
+    margin-bottom: 10px
+
+.plans-item
+    background: rgba(0, 0, 0, 0.73)
+    background-size: 230px, 100%
+    background-repeat: no-repeat
+    background-position: -50px -50px, 100%
+    padding: 50px 20px
+    height: 100%
+
+@media(min-width: 768px)
+    .plans
+        padding: 90px 0px
+    .plans [class*=col-]
+            margin-bottom: 0px
+    .plans-item
+        padding: 50px 20px
+
+@media(min-width: 992px)
+    .plans
+        padding: 99px 0 120px
+    .plans [class*=col-]
+        margin-bottom: 0px
+    .plans-item
+        padding: 92px 68px 100px
+    .plans .caption
+        width: calc( 50% - 15px )
+        margin-bottom: 47px
+    .plans .title-sub
+        text-align: left
+        font-weight: 500
+        font-size: 16px

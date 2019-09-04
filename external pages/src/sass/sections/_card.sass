@@ -1,0 +1,34 @@
+.card
+    border: none
+    margin-bottom: 10px
+    &-header
+        padding: 0px
+        border-bottom: none
+        border-radius: 0px!important
+    &-body
+        background-color: #f7f7f7
+        border: none
+        @media(min-width: 992px)
+            padding: 1.5rem 3rem
+    &-trigger
+        display: block
+        background-color: black
+        padding: 1rem 1.5rem
+        color: #ffce02
+        font-size: 18px
+        i:before
+            font-size: 15px
+            font-weight: 900
+            content: "\f077"!important
+        @media(min-width: 768px)
+            font-size: 20px
+        &:hover
+            color: #ffce02
+    &-trigger.collapsed
+        background-color: #f7f7f7
+        color: black
+        i:before
+            content: '\f078'!important
+        &:hover
+            background-color: black
+            color: #ffce02

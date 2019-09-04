@@ -1,0 +1,456 @@
+.project
+    padding: 100px 0px
+    background: url(../img/project_bg.jpg) center top no-repeat/cover
+
+@media(min-width: 768px) and ( max-width:991px)
+    .project
+        .container
+            max-width: 620px
+.project-bg
+    padding-top: 227.5px
+
+.project-map
+    display: flex
+    flex-flow: wrap
+    padding: 45px 0px
+
+.project-map-box
+    position: relative
+
+.project-sub-ttl
+    max-width: 390px
+    margin: 0 auto
+    text-align: center
+    color: white
+    line-height: 20px
+
+.project-item-wrap
+    padding: 5px 10px
+    transition: 0.6s
+    width: 180px
+    transform: translateX(-100%) rotate(-90deg)
+    transform-origin: 100% 0
+
+.project-item
+    margin-left: 18px
+    margin-right: 18px
+    position: relative
+    height: 415px
+    cursor: pointer
+    padding: 0px 10px
+    @media(min-width: 992px)
+        &:hover
+            .project-item-rect
+                span
+                    display: inline-block
+                    border-radius: 50%
+                    background-color: $primary-color
+                    &:before
+                        display: block!important
+                        height: 11px
+                        width: 11px
+                        border: 1px solid black
+                        background-color: black
+                        border-radius: 50%
+                        top: 6px
+                        left: 6px
+                    &:after
+                        display: none
+            .project-item-wrap
+                width: calc( 190px + 20%)
+                text-align: left
+                transform: translateX(-30%) rotate(0)
+                animation-name: boingInUp
+                background-color: $primary-color
+                animation-duration: 1.5s
+                animation-timing-function: ease
+                z-index: 99
+                box-shadow: 0px 2px 25px -1px rgba(255,204,2,1)
+                .project-item-text
+                    color: black
+                    text-align: left
+                .project-item-date
+                    text-align: left
+                    color: black
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.62)
+    @media(min-width: 1200px)
+        &:hover
+            .project-item-wrap
+                padding: 15px 25px
+                width: calc( 190px + 50%)
+                text-align: left
+                transform: translateX(-44%) rotate(0)
+
+@media(min-width: 992px)
+    .project-map
+        justify-content: center
+    .project-item-wrap
+        padding: 0px 0px 0px 5px
+    .project-item:nth-of-type(even):hover
+        .project-item-wrap
+            position: absolute
+            top: 5%
+            text-align: left
+    .project-item:nth-of-type(odd):hover
+        .project-item-wrap
+            position: absolute
+            bottom: 15%
+
+
+.project-item-rect
+    width: 23px
+    height: 23px
+    background-color: white
+    border-radius: 50%
+    position: absolute
+    transition: 0s
+
+.project-item-rect:before
+    content: ''
+    display: none
+    position: absolute
+    left: -6px
+    border-radius: 50%
+    top: -6px
+    border: 1px solid $primary-color
+    width: 35px
+    height: 35px
+    transition: 1s
+    animation-name: boingInUpRect
+
+.project-item-rect span
+    position relative
+    width: 23px 
+    height: 23px
+    display: none
+    width: 100%
+    &:before
+        content: ''
+        position: absolute
+        border: 1px solid black
+        width: 10px
+        transform: rotate(45deg)
+        right: 7px
+        top: 13px
+        background: black;
+    &:after
+        content: ''
+        position: absolute
+        border: 1px solid black
+        width: 7px
+        top: 7px
+        transform: rotate(-50deg)
+        left: 5px
+        background: black;
+
+.project-item:nth-of-type(even)
+    .project-item-wrap
+        margin-top: 215px
+        text-align: right
+    .project-item-rect 
+        left: 6px
+        top: calc(44% + 1px)
+        transform: rotate(-90deg)
+
+.project-item:nth-of-type(odd)
+    .project-item-wrap
+            margin-bottom: 200px
+    .project-item-rect 
+        left: 7px
+        top: calc(44% + 1px)
+        transform: rotate(-90deg)
+
+.project-item.current 
+    .project-item-rect
+        background-color: $primary-color
+        &:before
+            display: block
+        span
+            display: inline-block
+
+.project-item.previous
+    .project-item-rect
+        background-color: $primary-color
+        span
+            display: inline-block
+
+.project-item-date
+    color: lightgray  * 0.7
+    padding-bottom: 2px
+    margin-bottom: 3px
+    display: inline-block
+    font-size: 13px
+
+.project-item-text
+    line-height: 19px
+    color: white
+    animation-duration: 0.3s
+    animation-timing-function: ease
+
+.project-mab-fg
+    position: relative
+    top: 0px
+    left: 0px
+    right: 0px
+   
+.project-bg
+    display: block
+    height: 100%
+    position: absolute
+    width: 100%
+
+.project-bg-box
+    position: relative
+    display: block
+    width: 100%
+    height: 100%
+
+.project-bg-overlay
+    position: absolute
+    padding-top: 227.5px
+    width: 100%
+    height: 100%
+    top: 0px
+
+.progress-top  
+    padding-top: 10px
+    top: 0
+
+.progress-top,
+.progress-mid
+    height: 42px
+    position: relative
+    overflow: hidden
+    max-width: 1016px!important
+
+.progress-bottom
+    height: 42px
+    position: relative
+    overflow: hidden
+    max-width: 1140px
+.progress-right,
+.progress-left
+    width: 129px
+    background-color: transparent
+    position: absolute
+    max-height: 376px
+    overflow: hidden
+
+.progress-top-line
+    width: 1140px
+    height: 100%
+    border-top: 5px solid $white-color
+    border-right: 5px solid $white-color
+    border-radius: 0px 100px 0px 0px
+
+.progress-left
+    top: 424px
+    left: 0
+    bottom: 0
+
+.progress-left-line
+    height: 376px!important
+    height: 415px
+    border-left: 5px solid $white-color
+    border-top: 5px solid $white-color
+    border-radius: 50px 0 0 0px
+
+.progress-mid
+    height: 75px
+    margin-left: auto
+    margin-top: 327px
+    display: flex
+    bottom: 0px
+
+.progress-mid-wrap
+    margin-right: 10px
+    display: flex
+    width: 1140px
+    position: relative
+
+.progress-mid-line
+    width: 570px
+    position: absolute
+    right: 0px
+    bottom: 15px
+    height: 100%
+    border-bottom: 5px solid $white-color
+    border-right: 5px solid $white-color
+    border-radius: 0px 0px 50px 0px
+    &:before
+        content: ''
+        width: 570px
+        position: absolute
+        display: block
+        left: -569px
+        top: 70px
+        height: 100%
+        border-top: 5px solid white
+        border-radius: 120px 0px 0px 0px
+
+.progress-right
+    top: 10px
+    right: 10px
+
+.progress-right-line
+    margin-left: -5px
+    height: 362px!important
+    border-radius: 0px 50px 0px 0px
+    border-right: 5px solid $white-color
+    border-top: 5px solid $white-color
+
+.progress-bottom
+    top: 356px
+    bottom: 0
+    right: 0px
+
+.progress-bottom-line
+    width: 1141px
+    height: 100%
+    border-bottom: 5px solid $white-color
+    border-left: 5px solid $white-color
+    border-radius: 0px 0px 0px 50px
+
+.project-bg-overlay
+    .progress-right
+        display: none
+    .progress-mid
+        display: none
+    .progress-left
+        display: none
+    .progress-bottom
+        display: none
+    .progress-top-line
+        border-top: 5px solid $primary-color
+        border-right: 5px solid $primary-color
+    .progress-right-line
+        border-right: 5px solid $primary-color
+        border-top: 5px solid $primary-color
+    .progress-mid-line
+        border-bottom: 5px solid $primary-color
+        border-right: 5px solid $primary-color
+        &:before
+            border-top: 5px solid $primary-color
+    .progress-left-line
+        border-left: 5px solid $primary-color
+        border-top: 5px solid $primary-color
+    .progress-bottom-line
+        border-bottom: 5px solid $primary-color
+        border-left: 5px solid $primary-color
+
+.project-bg-overlay
+    .progress-top
+            max-width: 770px!important
+
+@media(max-width: 768px)
+    .project
+        padding: 50px 0px
+
+@media(max-width: 1199px)
+    .project-item
+        margin-right: 6px
+        margin-left: 6px
+        padding: 0px 10px
+        &:hover
+            .project-item-wrap
+                padding: 10px 15px
+    .progress-top-line
+        max-width: 850px
+        border-right: none
+        border-radius: 0px
+    .progress-top,
+    .progress-bottom,
+    .progress-mid
+        max-width: 850px!important
+    .project-bg-overlay .progress-top 
+        max-width: 620px!important
+
+@media(max-width: 991px)
+    .project-bg
+        display: none
+    .project-map
+        flex-direction: column
+    .project-item
+        width: 100% !important
+        min-height: 62px
+        height: auto
+        position: relative
+        margin: 0px!important
+        padding: 0px 
+        display: flex
+        &:before
+            content: ''
+            display: block
+            border-left: 5px solid white
+            position: absolute
+            left: 9px
+            height: 100%
+    .project-item--compleate
+        &:before
+            border-left: 5px solid $primary-color
+        .project-item-rect
+            background-color: $primary-color
+            span
+                display: block
+    .project-item-wrap
+        transform: translateX(0) rotate(0deg)
+    .project-item:nth-of-type(odd),
+    .project-item:nth-of-type(even)
+        .project-item-wrap
+            width: 90%!important
+            text-align: left
+            margin: 0px
+            .project-item-date
+                text-align: left
+    .project-item-rect
+        position: static
+    .project-item
+        &:hover
+            cursor: default
+            .project-item-wrap
+                padding: 5px 10px
+                transform: translateX(0) rotate(0)
+
+
+@media(min-width: 1200px)
+    .project-item
+        margin-left: 15px
+        margin-right: 15px
+        position: relative
+        height: 414px
+        cursor: pointer
+        padding: 0px 7px
+        &:hover
+            .project-item-wrap
+                transform: translateX(-44%) rotate(0)
+                .project-item-date
+                    margin-bottom: 8px
+@media(min-width: 1280px)
+    .project-item
+        margin-left: 18px
+        margin-right: 18px
+        &:hover
+            .project-item-wrap
+                padding: 25px
+                width: calc( 190px + 90%)
+@keyframes activeWidth
+    from
+        width: 0px
+
+    to
+        width: 100%
+
+.activeWidth
+    animation: activeWidth linear
+
+.activeHeight
+    animation: activeHeight 1s linear
+
+@keyframes activeHeight
+    from
+        height: 0
+    50%
+        opacity: 1   
+    to
+        height: 100%
+        

@@ -1,0 +1,81 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='css/bootstrap.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .page-loader
+            .page-laoder-frame
+                img.svg-loader(src="./img/Logo-primary.png")
+        .main-wrapper
+            include components/header.pug
+            main.content
+                section.news
+                    .news-banner.pt-5(style="background-image: url('./img/news-banner.jpg')")
+                        .container
+                            .row
+                                .col-lg-7.offset-1
+                                    p.text-white.mb-4 16.01.19
+                                    h2.title.mb-3.text-white Tesla создала технологию зарядки электромобилей за 15 минут
+                    .news-content
+                        .container
+                            .news-content-box.pt-5.pb-5
+                                p.mb-3 Уже до конца нынешнего года новые станции подзарядки электромобилей появятся в странах Европы и Азии.
+
+                                p.mb-3 Американский производитель электромобилей Tesla утверждает, что разработанная новая технология позволит сократить время подзарядки машин до 15 минут. Об этом говорится в сообщении компании, опубликованном в среду, 6 марта.
+
+                                p.mb-3 Утверждается, что новые станции подзарядки Supercharger V3 уже установлены в городе Фримонт в Калифорнии, и постепенно будут появляться в других штатах. В четвертом квартале нынешнего года новые станции подзарядки появятся в Европе и Азии.
+
+                                p.mb-3 Также сообщается, что пока их могут использовать только автомобили Tesla Model 3, однако обновление программного обеспечения предыдущих моделей вскоре позволит перейти на новую технологию.
+
+                                p.mb-3 Ранее сообщалось, что Tesla полностью перешла на продажи в режиме онлайн с целью довести розничную стоимость базового электрокара Model 3 до 35 тысяч долларов.
+
+                                p.mb-3 Американская компания Tesla полностью перешла на продажи в режиме онлайн с целью довести розничную стоимость базового электрокара Model 3 до 35 тысяч долларов. Об этом говорится в сообщении Tesla, опубликованном в четверг, 28 февраля. Компания уточнила, что отныне два варианта Model 3 продаются за 35 и 37 тысяч долларов. Второй вариант предусматривает увеличение на 9% дальности езды без подзарядки и мощности двигателя, а также новый салон. Эти достоинства обойдутся потребителю только на 6% дороже.
+                section.news-list.pt-5.pb-5
+                    .container
+                        h2.title.title-mid.mb-5 Новости компании
+                        .row.mb-3
+                            .col-md-4.mb-4
+                                .news-el.pb-4
+                                    a.news-el-box(href="")
+                                        .news-el-img.mb-3.embed-responsive-2by1
+                                            img(src="img/news_one.jpg", alt="news-img")
+                                        .title-small.mb-1 Lorem ipsum dolor sit amet
+                                    p.text-gray Eos id timeam meliore, assentior deseruisse necessitatibus vis id. Et consectetuer reprehendunt his, virtute praesent te nam. An mea volumus maluisset theophrastus consectetuer.
+                                    .news-info
+                                        .news-info-date 16.01.19
+                                        a.news-info-link(href="") читать далее       
+                            .col-md-4.mb-4
+                                .news-el.pb-4
+                                    a.news-el-box(href="")
+                                        .news-el-img.mb-3.embed-responsive-2by1
+                                            img(src="img/news_two.jpg", alt="news-img")
+                                        .title-small.mb-1 Lorem ipsum dolor sit amet
+                                    p.text-gray Eos id timeam meliore, assentior deseruisse necessitatibus vis id. Et consectetuer reprehendunt his, virtute praesent te nam. An mea volumus maluisset theophrastus consectetuer.
+                                    .news-info
+                                        .news-info-date 16.01.19
+                                        a.news-info-link(href="") читать далее       
+                            .col-md-4.mb-4
+                                .news-el.pb-4
+                                    a.news-el-box(href="")
+                                        .news-el-img.mb-3.embed-responsive-2by1
+                                            img(src="img/news_three.jpg", alt="news-img")
+                                        .title-small.mb-1 Lorem ipsum dolor sit ame
+                                    p.text-gray Eos id timeam meliore, assentior deseruisse necessitatibus vis id. Et consectetuer reprehendunt his, virtute praesent te nam. An mea volumus maluisset theophrastus consectetuer.
+                                    .news-info
+                                        .news-info-date 16.01.19
+                                        a.news-info-link(href="") читать далее    
+ 
+
+            include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug

@@ -1,0 +1,109 @@
+.pagination 
+    flex-flow: wrap
+    padding: 0.5rem 0px
+    .page-item 
+        a
+            margin: 3px 2px
+            border-radius: 50%
+            color: black
+            border: 1px solid black
+            width: 46px
+            height: 46px
+            font-size: 16px
+            text-align: center
+            line-height: 45px
+            font-weight: 700
+            position: relative
+            & >
+                i 
+                    vertical-align: baseline
+                    font-weight: 700
+            &:hover
+                background-color: black
+                color: #ffce02
+                // color: rgb(3, 94, 106)
+        &.active
+            a
+              background-color: black
+              color: #ffce02
+              &:hover
+                  cursor: default
+        &-next
+            margin-left: 20px
+            a
+                &:before
+                    content: ''
+                    position: absolute
+                    display: block
+                    border: 1px solid black
+                    height: 14px
+                    top: 15px
+                    right: 15px
+
+                &:after
+                    content: ''
+                    position: absolute
+                    display: block
+                    border-left: 2px solid black
+                    border-bottom: 2px solid black
+                    height: 10px
+                    width: 10px
+                    top: 17px
+                    left: 11px
+                    transform: rotate(-135deg)
+                &:hover
+                    &:after, 
+                    &:before
+                        border-color: #ffce02!important
+
+        &-prev
+            margin-right: 20px
+            a
+                &:before
+                    content: ''
+                    position: absolute
+                    display: block
+                    border: 1px solid black
+                    height: 14px
+                    top: 15px
+                    left: 15px
+                &:after
+                    content: ''
+                    position: absolute
+                    display: block
+                    border-left: 2px solid black
+                    border-bottom: 2px solid black
+                    height: 10px
+                    width: 10px
+                    top: 17px
+                    right: 11px
+                    transform: rotate(45deg)
+                &:hover
+                    &:after, 
+                    &:before
+                        border-color: #ffce02!important
+
+    &-costom
+        .page-item 
+            a
+                background-color: transparent
+                color: white!important
+                border-color: rgba(222, 226, 230, 0.6)
+                position: relative
+                &:before,
+                &:after
+                    border-color: white!important
+                &:hover
+                    background-color: white
+                    color: rgb(3, 94, 106)!important
+                    &:after, 
+                    &:before
+                        border-color: rgb(3, 94, 106)!important
+                        color: rgb(3, 94, 106)!important
+            &.active 
+                a
+                    background-color: white
+                    color: rgb(3, 94, 106)!important
+
+
+

@@ -1,0 +1,57 @@
+.footer
+    padding: 20px 0px
+    background-color: #191919
+    order: 3
+
+.copy
+    color: white
+    padding: 10px 0px
+    text-align: center
+
+.social-list
+    display: flex
+    justify-content: center
+    flex-flow: wrap
+    &-styled
+        background-color: #ffce02!important
+        li
+            a > i
+                color: black 
+
+.social-list li 
+    margin: 10px 10px
+
+.social-list a
+    padding: 0px 5px
+    &:hover
+        i
+            color: $secondary-color
+    
+.social-list a > i
+    color: $primary-color
+    transition: 0.3s
+    font-size: 17px
+
+
+.foo-list
+    text-align: center
+    padding: 10px 0px
+
+.foo-list a
+    padding: 5px 0px
+    color: $primary-color
+    &:hover
+        color: $secondary-color
+    
+.social-list a:hover
+    .icon
+        color: $secondary-color
+
+@media(min-width: 768px)
+    .foo-list a
+        font-size: 12px
+    .foo-list
+        text-align: right
+        padding: 5px 0px
+    .copy
+        text-align: left

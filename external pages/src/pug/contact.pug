@@ -1,0 +1,160 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='css/bootstrap.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .page-loader
+            .page-laoder-frame
+                img.svg-loader(src="./img/Logo-primary.png")
+        .main-wrapper
+            header.header.header-border
+                .container
+                    .header-wrapper
+                        .header-logo-box
+                            a.logo(href="")
+                                img(src='./img/Logo-primary.png' alt="logo")
+                        .header-box
+                            .header-top
+                                .header-call
+                                    span.icon-phone
+                                        i.fas.fa-phone.fa-flip-horizontal
+                                    .header-call-numbers   
+                                        a(href='') +7 902-293-212
+                                .header-user
+                                    a.header-user-login(href="") Вход
+                                    span /
+                                    a.header-user-register(href="") Регистрация
+                            .hamburger.hamburger--spin.js-hamburger
+                                .hamburger-box
+                                    .hamburger-inner
+                            nav.header-nav
+                                ul.header-nav-list
+                                    li
+                                        a(href="#company") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="index2.html") благотворительность
+                        .header-nav-mobile
+                            .header-user.header-user-mobile
+                                a.header-user-login(href="") Вход
+                                span /
+                                a.header-user-register(href="") Регистрация
+                            nav.nav-mobile
+                                ul.nav-mobile-list
+                                    li
+                                        a(href="#company") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="") благотворительность
+                            ul.social-list.social-list-mobile-nav
+                                li
+                                    a(href="/")
+                                        i.fab.fa-vk
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-facebook
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-twitter
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-instagram
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-youtube
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-telegram-plane
+            main.content
+                section.contact
+                    .container.d-flex
+                        .row
+                            .col-12.col-lg-5.col-xl-4.pr-xl-1
+                                .contact-lft-clmn.mb-4.pt-5
+                                    h2.title.mb-5.mt-3 Контактная информация
+                                    .row
+                                        .col-12.mb-4.d-flex
+                                            i.fas.fa-map-marker-alt.mr-3.text-secondary
+                                            p Украина, Киевская область, Киев, улица Леси Украинки, дом 3, офис 30112
+                                        .col-12.mb-4.d-flex
+                                            i.fas.fa-mobile-alt.mr-3.text-secondary
+                                            a.text-black(href="tel:7902293212") +7 902- 293-212
+                                        .col-12.mb-4.d-flex
+                                            i.far.fa-envelope-open.mr-3.text-secondary
+                                            a.text-black(href="mailto:empirehome@gmail.com") empirehome@gmail.com
+                                        .col-12.mb-5
+                                            ul.social-list.social-list-styled.pt-1.pb-1
+                                                li
+                                                    a(href="/")
+                                                        i.fab.fa-vk
+                                                li
+                                                    a(href="/") 
+                                                        i.fab.fa-facebook-f
+                                                li
+                                                    a(href="/") 
+                                                        i.fab.fa-twitter
+                                                li
+                                                    a(href="/") 
+                                                        i.fab.fa-instagram
+                                                li
+                                                    a(href="/") 
+                                                        i.fab.fa-youtube
+                                                li
+                                                    a(href="/")
+                                                        i.fab.fa-telegram-plane
+
+                                        .col-12.text-center.text-lg-left
+                                            a.btn.btn-outline-dark.btn-rounded(href="")
+                                                | ЗАДАТЬ НАМ ВОПРОС
+                                                i.fas.fa-long-arrow-alt-right.ml-2
+
+                            .col-12.col-lg-7.offset-xl-1
+                                .google-map
+                                    #map.google-map-box
+            include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span
+        script(type='text/javascript').
+            function initMap() {
+                var  map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: 50.5172959, lng: 30.4420863},
+                    zoom: 17,
+                    panControl: false,
+                    zoomControl: false,
+                    scaleControl: false,
+                    disableDefaultUI: true,
+                    scrollwheel: false,
+                });
+
+                new google.maps.Marker({
+                    position: new google.maps.LatLng(55.44496, 37.37277),
+                    map: map,
+                    title: 'Billions',
+                    icon: './img/marker.png'
+                });
+            }
+        script(async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap")
+        include components/script.pug

@@ -1,0 +1,308 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='css/bootstrap.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .page-loader
+            .page-laoder-frame
+                img.svg-loader(src="./img/Logo-primary.png")
+        .main-wrapper
+            header.header.header-border
+                .container
+                    .header-wrapper
+                        .header-logo-box
+                            a.logo(href="")
+                                img(src='./img/Logo-primary.png' alt="logo")
+                        .header-box
+                            .header-top
+                                .header-call
+                                    span.icon-phone
+                                        i.fas.fa-phone.fa-flip-horizontal
+                                    .header-call-numbers   
+                                        a(href='') +7 902-293-212
+                                .header-user
+                                    a.header-user-login(href="") Вход
+                                    span /
+                                    a.header-user-register(href="") Регистрация
+                            .hamburger.hamburger--spin.js-hamburger
+                                .hamburger-box
+                                    .hamburger-inner
+                            nav.header-nav
+                                ul.header-nav-list
+                                    li
+                                        a(href="#company") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="index2.html") благотворительность
+                        .header-nav-mobile
+                            .header-user.header-user-mobile
+                                a.header-user-login(href="") Вход
+                                span /
+                                a.header-user-register(href="") Регистрация
+                            nav.nav-mobile
+                                ul.nav-mobile-list
+                                    li
+                                        a(href="#company") О компании
+                                    li
+                                        a(href="#scope") Возможности
+                                    li
+                                        a(href="#services") Пакеты услуг
+                                    li
+                                        a(href="#comments") Отзывы
+                                    li
+                                        a(href="#project") Дорожная карта
+                                    li
+                                        a(href="") благотворительность
+                            ul.social-list.social-list-mobile-nav
+                                li
+                                    a(href="/")
+                                        i.fab.fa-vk
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-facebook
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-twitter
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-instagram
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-youtube
+                                li
+                                    a(href="/") 
+                                        i.fab.fa-telegram-plane
+            main.content
+                section.shop.pt-5.pb-5
+                    .container
+                        h2.title.mb-5 Категория товаров #1
+                        .row
+                            .col-lg-9.order-2.order-lg-1
+                                .row
+                                    .col-md-6.col-xl-4.mb-4
+                                        .shop-el
+                                            .row
+                                                .col-12.mb-3
+                                                    .shop-el-img.embed-responsive-10by7
+                                                        img(src="img/news_one.jpg", alt="news-img")
+                                                .col-12.mb-2
+                                                    .shop-rating.d-flex.justify-content-between
+                                                        ul.rating-list.d-flex
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star-half-alt
+                                                            li
+                                                                i.far.fa-star
+                                                            li
+                                                                i.far.fa-star
+                                                        .shop-rating-comment
+                                                            a(href="") 35 отзывов
+                                                .col-12.mb-2
+                                                    h5.title Название товара #1
+                                                .col-12
+                                                    .row.justify-content-between.align-items-center
+                                                        .col-auto
+                                                            h4.title 12 500 
+                                                                 span.h6.mb-0 руб
+                                                        .col-auto
+                                                            a.btn.btn-primary.btn-rounded(href="") Купить
+
+                                    .col-md-6.col-xl-4.mb-4
+                                        .shop-el
+                                            .row
+                                                .col-12.mb-3
+                                                    .shop-el-img.embed-responsive-10by7
+                                                        img(src="img/news_one.jpg", alt="news-img")
+                                                .col-12.mb-2
+                                                    .shop-rating.d-flex.justify-content-between
+                                                        ul.rating-list.d-flex
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star-half-alt
+                                                            li
+                                                                i.far.fa-star
+                                                            li
+                                                                i.far.fa-star
+                                                        .shop-rating-comment
+                                                            a(href="") 35 отзывов
+                                                .col-12.mb-2
+                                                    h5.title Название товара #2
+                                                .col-12
+                                                    .row.justify-content-between.align-items-center
+                                                        .col-auto
+                                                            h4.title 12 500 
+                                                                 span.h6.mb-0 руб
+                                                        .col-auto
+                                                            a.btn.btn-primary.btn-rounded(href="") Купить
+
+                                    .col-md-6.col-xl-4.mb-4
+                                        .shop-el
+                                            .row
+                                                .col-12.mb-3
+                                                    .shop-el-img.embed-responsive-10by7
+                                                        img(src="img/news_one.jpg", alt="news-img")
+                                                .col-12.mb-2
+                                                    .shop-rating.d-flex.justify-content-between
+                                                        ul.rating-list.d-flex
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star-half-alt
+                                                            li
+                                                                i.far.fa-star
+                                                            li
+                                                                i.far.fa-star
+                                                        .shop-rating-comment
+                                                            a(href="") 35 отзывов
+                                                .col-12.mb-2
+                                                    h5.title Название товара #3
+                                                .col-12
+                                                    .row.justify-content-between.align-items-center
+                                                        .col-auto
+                                                            h4.title 12 500 
+                                                                 span.h6.mb-0 руб
+                                                        .col-auto
+                                                            a.btn.btn-primary.btn-rounded(href="") Купить
+
+                                    .col-md-6.col-xl-4.mb-4
+                                        .shop-el
+                                            .row
+                                                .col-12.mb-3
+                                                    .shop-el-img.embed-responsive-10by7
+                                                        img(src="img/news_one.jpg", alt="news-img")
+                                                .col-12.mb-2
+                                                    .shop-rating.d-flex.justify-content-between
+                                                        ul.rating-list.d-flex
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star-half-alt
+                                                            li
+                                                                i.far.fa-star
+                                                            li
+                                                                i.far.fa-star
+                                                        .shop-rating-comment
+                                                            a(href="") 35 отзывов
+                                                .col-12.mb-2
+                                                    h5.title Название товара #4
+                                                .col-12
+                                                    .row.justify-content-between.align-items-center
+                                                        .col-auto
+                                                            h4.title 12 500 
+                                                                 span.h6.mb-0 руб
+                                                        .col-auto
+                                                            a.btn.btn-primary.btn-rounded(href="") Купить
+
+                                    .col-md-6.col-xl-4.mb-4
+                                        .shop-el
+                                            .row
+                                                .col-12.mb-3
+                                                    .shop-el-img.embed-responsive-10by7
+                                                        img(src="img/news_one.jpg", alt="news-img")
+                                                .col-12.mb-2
+                                                    .shop-rating.d-flex.justify-content-between
+                                                        ul.rating-list.d-flex
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star-half-alt
+                                                            li
+                                                                i.far.fa-star
+                                                            li
+                                                                i.far.fa-star
+                                                        .shop-rating-comment
+                                                            a(href="") 35 отзывов
+                                                .col-12.mb-2
+                                                    h5.title Название товара #5
+                                                .col-12
+                                                    .row.justify-content-between.align-items-center
+                                                        .col-auto
+                                                            h4.title 12 500 
+                                                                 span.h6.mb-0 руб
+                                                        .col-auto
+                                                            a.btn.btn-primary.btn-rounded(href="") Купить
+
+                                    .col-md-6.col-xl-4.mb-4
+                                        .shop-el
+                                            .row
+                                                .col-12.mb-3
+                                                    .shop-el-img.embed-responsive-10by7
+                                                        img(src="img/news_one.jpg", alt="news-img")
+                                                .col-12.mb-2
+                                                    .shop-rating.d-flex.justify-content-between
+                                                        ul.rating-list.d-flex
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star
+                                                            li
+                                                                i.fas.fa-star-half-alt
+                                                            li
+                                                                i.far.fa-star
+                                                            li
+                                                                i.far.fa-star
+                                                        .shop-rating-comment
+                                                            a(href="") 35 отзывов
+                                                .col-12.mb-2
+                                                    h5.title Название товара #6
+                                                .col-12
+                                                    .row.justify-content-between.align-items-center
+                                                        .col-auto
+                                                            h4.title 12 500 
+                                                                 span.h6.mb-0 руб
+                                                        .col-auto
+                                                            a.btn.btn-primary.btn-rounded(href="") Купить
+                            .col-lg-3.order-1.order-lg-2
+                                .row
+                                    .col-12.pl-xl-5.mb-5
+                                        h4.title.mb-3 Поиск
+                                        form.d-flex.search-form
+                                            input.form-control.form-control-search(type="text" placeholder="Search" aria-label="Search")
+                                            button.btn.btn-search(type="submit")
+                                                i.text-secondary.far.fa-search
+                                    .col-12.pl-xl-5.mb-3
+                                        h4.title.mb-3 Категории
+                                        ul
+                                            li.mb-3
+                                                a(href="") Категория товара #1
+                                            li.mb-3
+                                                a(href="") Категория товара #2
+                                            li.mb-3
+                                                a(href="") Категория товара #3
+                                            li.mb-3
+                                                a(href="") Категория товара #4
+                                            li.mb-3
+                                                a(href="") Категория товара #5
+
+            include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug

@@ -1,0 +1,73 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='css/bootstrap.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .page-loader
+            .page-laoder-frame
+                img.svg-loader(src="./img/Logo-primary.png")
+        .main-wrapper
+            include components/header.pug
+            main.content
+                section.pages.pt-5.pb-5
+                    .container
+                        .row
+                            .col-12
+                            h1.title.mb-5 Страницы
+                            .col-12
+                                ul
+                                    li.mb-3
+                                        a(href="404.html")
+                                            h6 1) 400
+                                    li.mb-3
+                                        a(href="500.html")
+                                            h6 2) 500
+                                    li.mb-3
+                                        a(href="authorizate.html")
+                                            h6 3) Автоиризация
+                                    li.mb-3
+                                        a(href="register.html")
+                                            h6 4) Регистрация
+                                    li.mb-3
+                                        a(href="recover.html")
+                                            h6 5) Восстановление пороля
+                                    li.mb-3
+                                        a(href="faq.html")
+                                            h6 6) Faq
+                                    li.mb-3
+                                        a(href="contact.html")
+                                            h6 7) Контакты
+                                    li.mb-3
+                                        a(href="news-list.html")
+                                            h6 8) Список  новостей
+                                    li.mb-3
+                                        a(href="news.html")
+                                            h6 9) Просмотр новости
+                                    li.mb-3
+                                        a(href="shop-list.html")
+                                            h6 10) Список товаров категории магазина
+                                    li.mb-3
+                                        a(href="shop-categories.html")
+                                            h6 11) Категории магазина
+                                    li.mb-3
+                                        a(href="shop_order.html")
+                                            h6 12) Просмотр товара магазина
+                                    li.mb-3
+                                        a(href="chairity.html")
+                                            h6 13) Благотворительность
+                                    li.mb-3
+                                        a(href="basket.html")
+                                            h6 14) Карзина
+            include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug

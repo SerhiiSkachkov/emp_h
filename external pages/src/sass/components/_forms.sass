@@ -1,0 +1,254 @@
+.form-control
+    border-radius: 30px
+    height: 50px
+    padding-left: 20px
+    &-search
+        border-radius: 0px
+        background-color: #f4f4f4
+        border: 1px solid #f4f4f4
+        &:focus
+          box-shadow: none!important
+          border: 1px solid #ffce02!important
+.form-control:focus 
+    color: #495057
+    background-color: #fff
+    border-color: #f23d3d
+    outline: 0
+    box-shadow: 0 0 0 0.2rem rgba(244, 67, 54, 0.36)
+
+textarea.form-control
+  height: 100px!important
+
+.scroll-wrapper
+  height: 400px
+
+.btn
+    padding-top: 13px
+    padding-bottom: 11px
+    padding-left: 20px
+    padding-right: 20px
+    font-family: $title-font
+    letter-spacing: 2px
+    &-search
+      border-radius: 0px
+      padding-left: 15px
+      padding-right: 15px
+      background-color: black
+      i
+        font-weight: 9
+      &:hover
+        opacity: 0.7
+
+.btn-warning:hover
+    box-shadow: 0px 1px 12px 0.5rem rgba(255,235,59,.44)
+    background-color: #ffc107
+    border-color: #ffc107
+.btn-rounded
+    border-radius: 30px
+    border-width: 2px
+
+.btn-primary
+    border-color: #f23d3d!important
+    background-color: #f23d3d!important
+
+.btn-outline-dark
+.btn-primary:hover
+    border-color: #f23d3d
+    box-shadow: 0px 1px 12px 0.5rem rgba(244, 67, 54, 0.36)
+
+.btn-primary:focus
+    border-color: #f23d3d
+    box-shadow: 0px 1px 12px 0.5rem rgba(244, 67, 54, 0.36)
+
+.radio-group 
+  display: block
+  position: relative
+  padding-left: 35px
+  margin-bottom: 10px
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  font-weight: 300
+
+.radio-group input 
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+
+.radio-checkmark 
+  position: absolute
+  top: 0
+  left: 0
+  height: 20px
+  width: 20px
+  border: 1px solid gray
+  border-radius: 50%
+
+.radio-checkmark:after 
+  content: ""
+  position: absolute
+  display: none
+
+.radio-group input:checked ~ .radio-checkmark:after 
+  display: block
+
+.radio-group input:disabled ~ .radio-checkmark
+    background-color: #f6f6f6
+
+.radio-group input:disabled ~ .radio-checkmark:after
+    background-color: darkgray
+
+.radio-group .radio-checkmark:after 
+  left: 3px
+  top: 3px
+  width: 12px
+  height: 12px
+  border-radius: 50%
+  background-color: #ffb951
+
+.checkbox-group 
+  display: block
+  position: relative
+  padding-left: 30px
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.checkbox-group input 
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+
+.checkbox-checkmark 
+  position: absolute
+  top: -2px
+  left: 0
+  height: 20px
+  width: 20px
+  border: 1px solid rgba(43, 55, 72, 0.55)
+  border-radius: 10px
+
+.checkbox-checkmark:after 
+  content: ""
+  position: absolute
+  display: none
+
+.checkbox-group input:checked ~ .checkbox-checkmark:after 
+  display: block
+
+.checkbox-group input:disabled ~ .checkbox-checkmark
+    background-color: #f6f6f6
+
+.checkbox-group input:disabled ~ .checkbox-checkmark:after
+    border-right: 2px solid #cdcecf
+    border-bottom: 2px solid #cdcecf
+
+.checkbox-group .checkbox-checkmark:after 
+  left: 7px
+  top: 3px
+  width: 5px
+  height: 10px
+  transform: rotate(45deg)
+  border-right: 2px solid #ffb951
+  border-bottom: 2px solid #ffb951
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button 
+  -webkit-appearance: none
+  margin: 0
+  
+input[type=number] 
+    -moz-appearance: textfield
+
+/*************** SCROLLBAR BASE CSS ***************/
+ 
+.scroll-wrapper 
+    overflow: hidden!important
+    padding: 0!important
+    position: relative
+    &:focus
+        box-shadow: 0 0 0 0.2rem rgba(244,67,54,.36)
+ 
+.scroll-wrapper > .scroll-content 
+    border: none!important
+    box-sizing: content-box !important
+    height: auto
+    left: 0
+    margin: 0
+    max-height: none
+    max-width: none!important
+    padding: 0
+    position: relative!important
+    top: 0
+    width: auto !important
+ 
+.scroll-wrapper > .scroll-content::-webkit-scrollbar 
+    height: 0
+    width: 0
+ 
+.scroll-element 
+    display: none
+.scroll-element, .scroll-element div 
+    box-sizing: content-box
+ 
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible 
+    display: block
+ 
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow 
+    cursor: default
+ 
+.scroll-textarea 
+    border: 1px solid #cccccc
+
+.scroll-textarea > .scroll-content 
+    overflow: hidden !important
+
+.scroll-textarea > .scroll-content > textarea 
+    border: none!important
+    box-sizing: border-box
+    height: 100%!important
+    margin: 0
+    padding: 0px 10px 
+    max-height: none!important
+    max-width: none!important
+    outline: none
+    overflow-x: hidden!important
+    position: relative !important
+    top: 0
+    width: 100%!important
+
+
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar 
+    height: 0
+    width: 0
+ 
+ 
+/*************** TEXTAREA STYLES ***************/
+ 
+.textarea-scrollbar 
+    height: 120px
+    border-radius: 20px
+
+textarea::-webkit-scrollbar 
+   display: none!important
+
+.scrollbar-outer > .scroll-element.scroll-y
+  height: 90%
+  top: 5%
+
+.textarea-scrollbar:focus
+    border: 1px solid red
+
+.is_focused
+  box-shadow: 0 0 0 0.2rem rgba(244,67,54,.36)
+  border: 1px solid red
